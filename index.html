@@ -612,7 +612,9 @@
           return false;
         });
 
-        $(".projects .button-group #btn-2").trigger("click");
+        setTimeout(function () {
+          $(".projects .button-group #btn-2").trigger("click");
+        }, 2000);
       });
 
       $(document).ready(function () {
