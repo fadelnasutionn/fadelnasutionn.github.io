@@ -38,12 +38,12 @@ ul {
 }
 .list-inline-item a {
   color: #5b2aee;
-  padding-left: 2px;
-  padding-right: 2px;
-  font-size: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 25px;
 }
 .list-inline-item a:hover {
-  color: gray;
+  color: #dd384e;
   font-weight: 100;
   padding-left: 10px;
   padding-right: 10px;
@@ -118,7 +118,7 @@ ul {
   bottom: 0;
   right: 0;
   height: 1px;
-  background-color: blueviolet;
+  background-color: #5b2aee;
   transition: all 0.4s ease;
   transform: scale(0);
 }
@@ -131,8 +131,8 @@ ul {
   font-weight: 400;
 }
 .btn-contact {
-  background-color: blueviolet;
-  border-color: blueviolet;
+  background-color: #5b2aee;
+  border-color: #5b2aee;
   border-width: 3px;
   color: #ffffff;
   padding: 5px 17px;
@@ -146,6 +146,7 @@ ul {
 }
 .btn-contact:focus,
 .btn-1:focus,
+.btn-submit:focus,
 btn:active {
   outline: none !important;
   box-shadow: none;
@@ -177,12 +178,13 @@ btn:active {
 } */
 .about-text h1 {
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
   margin: 0 0 20px;
 }
 .about-text span {
   font-size: 49px;
+  font-weight: 700;
   color: #5b2aee;
   /* white-space: nowrap; */ /*dont use it*/
   display: inline-block;
@@ -222,7 +224,7 @@ btn:active {
 .skills-icon {
   font-size: 1.5rem;
   margin-right: 20px;
-  color: #5b2aee;
+  color: #e95065;
 }
 .skills-names {
   display: flex;
@@ -404,9 +406,12 @@ btn:active {
   border: 2px solid;
   font-weight: 500;
   color: #ffffff;
-  border-color: #5b2aee;
+  /* border-color: #5b2aee; */
   text-align: center;
   text-transform: uppercase;
+}
+.projects .button-group button.active {
+  background: #5b2aee;
 }
 .projects .button-group button + button {
   margin-left: 1.5rem;
@@ -425,6 +430,58 @@ btn:active {
 }
 .contact .section-title h2 {
   color: #ffffff;
+}
+.contact .contact-icon {
+  color: #5b2aee;
+}
+.contact label {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ffffff;
+  background: transparent;
+  border-color: #5b2aee;
+  border-radius: 15px;
+}
+.contact-form:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.contact-form:placeholder-shown,
+.contact-form input:placeholder-shown,
+.contact-form textarea::placeholder {
+  font-weight: 200;
+}
+.btn-submit {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-color: #5b2aee;
+  border-radius: 30px;
+  border-width: 2px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+.btn-submit:hover {
+  color: #ffffff;
+  background-color: #5b2aee;
+}
+/* .contact-form-bg {
+  justify-content: center;
+  border: 1px solid #5b2aee;
+  padding: 20px 20px 20px 20px;
+} */
+
+/*---- Message ----*/
+.alert-msg {
+  font-size: 0.8rem;
 }
 
 /*---- Responsive ----*/
@@ -455,6 +512,7 @@ btn:active {
     background-color: #5b2aee;
     position: absolute;
   }
+
   /*-- Rotate --*/
   .navbar-toggler-inner::before {
     content: "";
@@ -499,9 +557,6 @@ btn:active {
   .navbar.navbar-shrink .navbar-nav {
     background-color: black;
   }
-  .about-btn {
-    text-align: center;
-  }
   .about-text h1 {
     font-size: 25px;
     font-weight: 700;
@@ -544,7 +599,21 @@ btn:active {
     padding-bottom: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .about-text {
+    text-align: center;
+  }
+  .about-text h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .about-text span {
+    font-size: 34px;
+    color: #5b2aee;
+  }
+  .about-btn {
+    text-align: center;
+  }
   .projects .button-group button {
     margin: 0 0 2rem 0;
     padding: 6px 10px 6px 10px;
@@ -552,7 +621,7 @@ btn:active {
     border: 1px solid;
     font-weight: 400;
     text-align: center;
-    border-color: #5b2aee;
+    /* border-color: #5b2aee; */
   }
   .projects .button-group button + button {
     margin-left: 0.15rem;
@@ -565,7 +634,7 @@ btn:active {
     font-size: small;
     border: 1px solid;
     font-weight: 300;
-    border-color: #5b2aee;
+    /* border-color: #5b2aee; */
   }
   .projects .button-group button + button {
     margin-left: 0.15rem;
